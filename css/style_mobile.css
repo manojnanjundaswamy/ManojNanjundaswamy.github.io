@@ -117,7 +117,7 @@ font-weight: 900;
 	background-color: #FFF;
 	}
 /* Home Style */
-#profile-home{
+#tf-home{
 	background: url(../img/explore.jpg);
 	background-size: cover;
 	background-position: center;
@@ -126,7 +126,7 @@ font-weight: 900;
 	color: #cfcfcf;
 }
 
-#profile-home .overlay{
+#tf-home .overlay{
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
@@ -137,7 +137,7 @@ font-weight: 900;
 	height: 750px;
 	background-attachment: fixed;
 }
-#profile-home p.lead{
+#tf-home p.lead{
 	color: #e3e3e3;
 }
 
@@ -165,7 +165,7 @@ a.fa.fa-angle-down:hover{
 	border: 2px solid #ff9000;
 }
 /* About Section */
-#profile-about{
+#tf-about{
 	padding: 80px 0;
 }
 ul.about-list{ margin: 30px 0 0 ;}
@@ -180,7 +180,7 @@ ul.about-list li span{
 }
 
 /* Team Section */
-#profile-education{
+#tf-education{
 	background: url(../img/06.jpg);
 	background-size: cover;
 	background-position: center;
@@ -188,7 +188,7 @@ ul.about-list li span{
 	background-repeat: no-repeat;
 	color: #ffffff;
 }
-#profile-education .overlay{
+#tf-education .overlay{
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
@@ -240,15 +240,15 @@ img.img-circle.education-img {
 	border: 4px solid transparent;
 	transition: all 0.5s;
 }
-#profile-education .item .thumbnail:hover>img.img-circle.education-img{
+#tf-education .item .thumbnail:hover>img.img-circle.education-img{
 	border: 4px solid #ff9000;
 }
-#profile-education .thumbnail {
+#tf-education .thumbnail {
 	background: transparent;
 	border: 0;
 }
 
-#profile-education .thumbnail .caption {
+#tf-education .thumbnail .caption {
 	padding: 9px;
 	color: #F2F2F2;
 }
@@ -278,7 +278,7 @@ img.img-circle.education-img {
 }
 
 /* project Section */
-#profile-project{
+#tf-project{
 	padding: 80px 0;
 }
 
@@ -286,7 +286,7 @@ img.img-circle.education-img {
 	margin-top: 40px;
 }
 
-#profile-project i.fa {
+#tf-project i.fa {
 	font-size: 40px;
 	border: 4px solid #ff9000;
 	width: 100px;
@@ -297,18 +297,18 @@ img.img-circle.education-img {
 	transition: all 0.5s;
 }
 
-#profile-project i.fa.fa-mobile{
+#tf-project i.fa.fa-mobile{
 	font-size: 50px;
 	padding: 20px 25px;
 }
 
-#profile-project .service:hover>i.fa{
+#tf-project .service:hover>i.fa{
 	background: #ff9000;
 	color: #ffffff;
 }
 
 /* experience Section */
-#profile-experience{
+#tf-experience{
 	background: url(../img/04.jpg);
 	background-size: cover;
 	background-position: center;
@@ -317,7 +317,7 @@ img.img-circle.education-img {
 	color: #ffffff;
 }
 
-#profile-experience .overlay{
+#tf-experience .overlay{
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
@@ -337,7 +337,7 @@ img.img-circle.education-img {
 }
 /* Accomplishment Section
 ==============================*/
-#profile-accomplish{
+#tf-accomplish{
 	padding: 80px 0;
 }
 .categories{
@@ -346,7 +346,7 @@ img.img-circle.education-img {
 ul.cat li{
 	display: inline-block;
 }
-#profile-accomplish li.pull-right {
+#tf-accomplish li.pull-right {
 	margin-top: 10px;
 }
 ol.type li{
@@ -436,7 +436,7 @@ ol.type li a.active { font-weight: 700; }
 .hover-bg:hover .hover-text{
 	opacity: 1;
 }
-#profile-accomplish i.fa {
+#tf-accomplish i.fa {
 	height: 30px;
 	width: 30px;
 	border: 1px solid #ff9000;
@@ -446,7 +446,7 @@ ol.type li a.active { font-weight: 700; }
 	color: #ff9000;
 }
 /* contact-me Section */
-#profile-contact-me{
+#tf-contact-me{
 	background: url(../img/05.jpg);
 	background-size: cover;
 	background-position: center;
@@ -455,7 +455,7 @@ ol.type li a.active { font-weight: 700; }
 	color: #ffffff;
 }
 
-#profile-contact-me .overlay{
+#tf-contact-me .overlay{
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
@@ -481,7 +481,7 @@ ol.type li a.active { font-weight: 700; }
 	color: #d1d1d1;
 }
 /* Contact Section */
-#profile-contact{
+#tf-contact{
 	padding: 80px 0;
 }
 
@@ -491,7 +491,7 @@ label {
 	font-weight: 400;
 	font-family: 'Open Sans', sans-serif;
 }
-#profile-contact .form-control {
+#tf-contact .form-control {
 	display: block;
 	width: 100%;
 	padding: 6px 12px;
@@ -509,7 +509,7 @@ label {
 	transition: none;
 }
 
-#profile-contact .form-control:focus {
+#tf-contact .form-control:focus {
 	border-color: inherit;
 	outline: 0;
 	-webkit-box-shadow: transparent;
@@ -547,7 +547,7 @@ label {
 
 
 
-button.btn.profile-btn.btn-default {
+button.btn.tf-btn.btn-default {
 	float: right;
 	background: #ff9000;
 	border: 0;
