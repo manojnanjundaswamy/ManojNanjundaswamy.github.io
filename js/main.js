@@ -55,10 +55,9 @@ function main() {
             $('.navbar-default').removeClass('on');
         }
     });
-	
-    $('#scroll-profile-about').on('click', function(){
-    	$('.navbar-default').addClass('on');
-    });
+    
+ 
+    
 
     $('body').scrollspy({ 
         target: '.navbar-default',
