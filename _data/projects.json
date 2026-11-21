@@ -29,8 +29,8 @@
           "kind": "Pipeline",
           "stack": "n8n, Claude API, ComfyUI",
           "description": "Takes a topic to a finished video in the upload queue: research from competitor transcripts, scripts with the Claude API, images with ComfyUI, voice, and ffmpeg assembly. It runs five YouTube channels.",
-          "link": "https://github.com/manojnanjundaswamy/short_video_creation_automation",
-          "id": "content-pipeline"
+          "id": "content-pipeline",
+          "status": "Private"
         },
         {
           "name": "Document Q&A with retrieval",
