@@ -1,0 +1,101 @@
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <h1>I build backend systems by day and puzzle games by night.</h1>
+      <p class="lead">I'm Manoj, a senior software engineer at Amadeus in Bangalore, working in Java, Spring Boot and Kafka. After hours I run Vimora Studio, where I make Untangle Art, an arrow puzzle game for Android.</p>
+      <div class="actions">
+        <a class="btn primary" href="/work/">See my work</a>
+        <a class="btn" href="/studio/">Visit the studio</a>
+      </div>
+    </div>
+    <figure class="board-card">
+      <div class="board" id="board"></div>
+      <figcaption class="board-foot">
+        <span id="board-status" aria-live="polite">A real level from Untangle Art. Tap an arrow with a clear path.</span>
+        <button id="board-solve" type="button">Solve it for me</button>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <h2>By day</h2>
+      <p class="prose">Senior Software Engineer II at Amadeus Software Labs since January 2023. I work on the backend services behind travel software, and I like the unglamorous parts: migrations, event streams, pipelines and tests.</p>
+      <ul class="facts">
+        <li><b>40%</b><span>faster startup after moving a Java 6 monolith to Java 17 and Spring Boot 3</span></li>
+        <li><b>35%</b><span>more throughput from a Kafka event-streaming architecture</span></li>
+        <li><b>30%</b><span>faster deployments from automated Jenkins pipelines</span></li>
+      </ul>
+      <p style="margin-top:20px"><a href="/work/">Work history and case studies</a></p>
+    </div>
+    <div>
+      <h2>After hours</h2>
+      <p class="prose">Vimora Studio is my one-person game studio. I design the games, write the code, and build the tools that make the trailers, store art and releases, so a studio of one can ship like a team.</p>
+      <ul class="facts">
+        <li><b>Now</b><span>Untangle Art is in closed testing on Google Play</span></li>
+        <li><b>Next</b><span>Public launch on Android after the test</span></li>
+        <li><b>Later</b><span>A second puzzle game, now being explored</span></li>
+      </ul>
+      <p style="margin-top:20px"><a href="/studio/">Inside the studio</a></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Selected work</h2>
+    <ul class="ledger">
+      <li><a href="/work/#migration"><span class="when">Amadeus</span><span class="t">Java 6 monolith to Java 17 and Spring Boot 3</span><span class="tag">Migration</span><span class="d">Led the move to a modern, cloud-ready stack. Startup time dropped by 40%.</span></a></li>
+      <li><a href="/work/#streaming"><span class="when">Amadeus</span><span class="t">Kafka event streaming</span><span class="tag">Architecture</span><span class="d">Designed event-driven microservices that raised throughput by 35%.</span></a></li>
+      <li><a href="/work/#delivery"><span class="when">Amadeus</span><span class="t">Pipelines, tests and zero-downtime releases</span><span class="tag">Delivery</span><span class="d">Automated CI/CD across environments and raised unit test coverage to 99%.</span></a></li>
+      <li><a href="/projects/#content-pipeline"><span class="when">Side project</span><span class="t">Automated YouTube content pipeline</span><span class="tag">AI</span><span class="d">From idea to upload queue: scripts with the Claude API, images with ComfyUI, voice and ffmpeg assembly.</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap feature">
+    <div>
+      <div class="app-head">
+        <img src="/assets/img/untangleart-icon.png" alt="" width="72" height="72">
+        <div>
+          <h2>Untangle Art</h2>
+          <span class="status">Closed test on Google Play</span>
+        </div>
+      </div>
+      <p class="prose">A calm arrow puzzle. Tap the arrows out in the right order, and when the board is clear it flips over to show the picture hidden in it: a whale, a lion, the Taj Mahal. A new daily puzzle, a gallery to fill, and it plays offline.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://apps.manojnanjundaswamy.com/untangleart/test/">Join the test</a>
+        <a class="btn" href="/studio/">How it's made</a>
+      </div>
+    </div>
+    <div class="phones">
+      <img src="/assets/img/ua-02-tap.jpg" alt="Untangle Art: tapping an arrow to slide it out" width="540" height="960" loading="lazy">
+      <img src="/assets/img/ua-03-reveal.jpg" alt="Untangle Art: a lion revealed after solving a level" width="540" height="960" loading="lazy">
+      <img src="/assets/img/ua-04-gallery.jpg" alt="Untangle Art: the gallery of solved pictures" width="540" height="960" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Side projects</h2>
+    <ul class="ledger">
+      <li><a href="https://github.com/manojnanjundaswamy/RAG-QA"><span class="when">AI</span><span class="t">Document Q&amp;A with retrieval</span><span class="tag">Spring Boot, ChromaDB</span><span class="d">Ask questions about uploaded PDFs and get answers grounded in the right passages.</span></a></li>
+      <li><a href="https://github.com/manojnanjundaswamy/Resume-Scorer"><span class="when">AI</span><span class="t">Resume Scorer</span><span class="tag">Spring Boot, React</span><span class="d">Scores a resume against a job description, with gaps, matches and interview questions.</span></a></li>
+      <li><a href="https://github.com/manojnanjundaswamy/spring-redis-forge"><span class="when">Backend</span><span class="t">Spring Redis Forge</span><span class="tag">Java 17, Redis</span><span class="d">A distributed cache service with pub/sub invalidation, circuit breakers and metrics.</span></a></li>
+    </ul>
+    <p style="margin-top:22px"><a href="/projects/">All projects</a></p>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Building something in backend, AI products or games? I'd like to hear about it.</h2>
+    <a class="mail" href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+    <p class="muted" style="margin-top:14px">Or find me on <a href="https://www.linkedin.com/in/manoj-nanjundaswamy/">LinkedIn</a> and <a href="https://github.com/manojnanjundaswamy">GitHub</a>.</p>
+  </div>
+</section>
+<script src="/assets/js/whale.js" defer></script>

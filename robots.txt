@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.manojnanjundaswamy.com/sitemap.xml
