@@ -1,0 +1,15 @@
+{
+  "name": "Personal site",
+  "status": "Revamped and live; add new products in _data/projects.json",
+  "milestones": [
+    { "label": "Backup of old site", "state": "done" },
+    { "label": "Multi-page revamp", "state": "done" },
+    { "label": "Better photo and CV download", "state": "next" },
+    { "label": "Search Console and sitemap", "state": "next" }
+  ],
+  "links": [
+    { "label": "Website", "url": "https://www.manojnanjundaswamy.com/" },
+    { "label": "Backup branch", "url": "https://github.com/manojnanjundaswamy/ManojNanjundaswamy.github.io/tree/backup-2025-before-revamp" }
+  ],
+  "updated": "2026-11-21"
+}

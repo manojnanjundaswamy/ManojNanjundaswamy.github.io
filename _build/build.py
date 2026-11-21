@@ -99,14 +99,46 @@ FOOT = '''<footer class="site-foot"><div class="wrap">
 '''
 
 
+def esc(t):
+    return t.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+
+
+def item_html(it):
+    status = f' <span class="status">{esc(it["status"])}</span>' if it.get('status') else ''
+    inner = (f'<span class="when">{esc(it["kind"])}</span><span class="t">{esc(it["name"])}{status}</span>'
+             f'<span class="tag">{esc(it["stack"])}</span><span class="d">{esc(it["description"])}</span>')
+    wrap = f'<a href="{it["link"]}">{inner}</a>' if it.get('link') else f'<div class="row">{inner}</div>'
+    rid = f' id="{it["id"]}"' if it.get('id') else ''
+    return f'      <li{rid}>{wrap}</li>' + NL
+
+
+NL = chr(10)
+
+
+def projects_blocks():
+    """Renders _data/projects.json: every section for /projects/, and featured items for the home page."""
+    data = json.loads((ROOT / '_data' / 'projects.json').read_text(encoding='utf8'))
+    out, featured = [], []
+    for i, sec in enumerate(data['sections']):
+        items = ''.join(item_html(it) for it in sec['items'])
+        featured += [it for it in sec['items'] if it.get('featured')]
+        top = ' style="border-top:0;padding-top:16px"' if i == 0 else ''
+        out.append(NL.join([f'<section{top}>', '  <div class="wrap">', f'    <h2>{esc(sec["title"])}</h2>',
+                            '    <ul class="ledger">', items + '    </ul>', '  </div>', '</section>']))
+    feat = '<ul class="ledger">' + NL + ''.join(item_html(it) for it in featured) + '    </ul>'
+    return (NL + NL).join(out), feat
+
+
 def main():
     email = os.environ.get('SITE_EMAIL', '').strip()
     if not email:
         print('warning: SITE_EMAIL not set, pages keep the {{EMAIL}} placeholder')
+    projects, featured = projects_blocks()
     urls = []
     for name, url, key, title, desc in PAGES:
         body = (ROOT / '_pages' / f'{name}.html').read_text(encoding='utf8')
         html = head(url, title, desc, key) + header(key) + '<main>\n' + body.strip() + '\n</main>\n' + FOOT
+        html = html.replace('{{PROJECTS}}', projects).replace('{{FEATURED}}', featured)
         if email:
             html = html.replace('{{EMAIL}}', email)
         out = ROOT / ('404.html' if name == '404' else ('index.html' if url == '/' else url.strip('/') + '/index.html'))

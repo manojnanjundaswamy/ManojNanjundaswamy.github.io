@@ -1,0 +1,5 @@
+exclude:
+  - studio.json
+  - README.md
+include:
+  - .well-known

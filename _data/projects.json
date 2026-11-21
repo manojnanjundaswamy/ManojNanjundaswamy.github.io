@@ -1,0 +1,102 @@
+{
+  "_help": "Add a project: put an object in the right section. featured=true also shows it on the home page. status is optional (e.g. \"Closed test\", \"Live\", \"Archived\"). Then run _build/build.py.",
+  "sections": [
+    {
+      "title": "Games and tools",
+      "items": [
+        {
+          "name": "Untangle Art",
+          "kind": "Game",
+          "stack": "React, Capacitor",
+          "description": "An Android arrow puzzle where every level hides a picture. In closed testing on Google Play.",
+          "link": "/studio/",
+          "status": "Closed test"
+        },
+        {
+          "name": "Studio HQ",
+          "kind": "Tool",
+          "stack": "Electron, React",
+          "description": "My private desktop app for running Vimora Studio: projects, releases, assets, uptime and automated jobs.",
+          "link": "/studio/"
+        }
+      ]
+    },
+    {
+      "title": "AI",
+      "items": [
+        {
+          "name": "Automated YouTube content pipeline",
+          "kind": "Pipeline",
+          "stack": "n8n, Claude API, ComfyUI",
+          "description": "Takes a topic to a finished video in the upload queue: research from competitor transcripts, scripts with the Claude API, images with ComfyUI, voice, and ffmpeg assembly. It runs five YouTube channels.",
+          "link": "https://github.com/manojnanjundaswamy/short_video_creation_automation",
+          "id": "content-pipeline"
+        },
+        {
+          "name": "Document Q&A with retrieval",
+          "kind": "Service",
+          "stack": "Spring Boot, ChromaDB",
+          "description": "Upload PDFs and ask questions in plain language. It retrieves the relevant passages with overlapping context and answers from them.",
+          "link": "https://github.com/manojnanjundaswamy/RAG-QA",
+          "featured": true
+        },
+        {
+          "name": "Resume Scorer",
+          "kind": "Web app",
+          "stack": "Spring Boot, React, Razorpay",
+          "description": "Scores a resume against a job description, with strengths, gaps, match suggestions and tailored interview questions. Includes paid plans through Razorpay.",
+          "link": "https://github.com/manojnanjundaswamy/Resume-Scorer",
+          "featured": true
+        },
+        {
+          "name": "AI Mail Assist",
+          "kind": "Service",
+          "stack": "Spring Boot, Gemini API",
+          "description": "Drafts email replies in the tone you pick: quick, formal or personal.",
+          "link": "https://github.com/manojnanjundaswamy/AI_Mail_Assist"
+        },
+        {
+          "name": "DSA practice bot",
+          "kind": "Bot",
+          "stack": "Python, Telegram",
+          "description": "A Telegram bot that schedules data-structure and algorithm practice with spaced repetition, gives hints, and finds your weak topics.",
+          "link": "https://github.com/manojnanjundaswamy/dsa-srs-bot"
+        }
+      ]
+    },
+    {
+      "title": "Backend and systems",
+      "items": [
+        {
+          "name": "Real-time order processing",
+          "kind": "Kafka",
+          "stack": "Java 17, Kafka, PostgreSQL",
+          "description": "Event-driven microservices with dead-letter queues, idempotent consumers and order state tracked in real time.",
+          "link": "https://github.com/manojnanjundaswamy/order-service"
+        },
+        {
+          "name": "Spring Redis Forge",
+          "kind": "Cache",
+          "stack": "Java 17, Redis",
+          "description": "A distributed cache service: cache-aside, TTL expiry, pub/sub invalidation, circuit-breaker fallback and Micrometer metrics.",
+          "link": "https://github.com/manojnanjundaswamy/spring-redis-forge",
+          "featured": true
+        },
+        {
+          "name": "Microservices gateway reference",
+          "kind": "Platform",
+          "stack": "Kubernetes, Helm, Jenkins",
+          "description": "API gateway, service discovery and health checks, deployed with Helm and promoted from dev to staging to production by Jenkins.",
+          "link": "https://github.com/manojnanjundaswamy/spring-microservices"
+        },
+        {
+          "name": "Video streaming app",
+          "kind": "Media",
+          "stack": "Spring Boot, React",
+          "description": "Upload, store and stream video with HTTP range requests, so playback can start and seek without downloading everything.",
+          "link": "https://github.com/manojnanjundaswamy/video-streaming-app"
+        }
+      ]
+    }
+  ]
+}
