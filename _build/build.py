@@ -23,6 +23,12 @@ PAGES = [
      'From mechatronics to backend engineering to making games. Skills, education and how to reach me.'),
     ('now', '/now/', 'now', 'Now · Manoj Nanjundaswamy',
      'What I am working on this month.'),
+    ('uploader', '/tools/media-studio-uploader/', '', 'Media Studio Uploader · Manoj Nanjundaswamy',
+     'A private tool that uploads my own videos to my own YouTube channels using the YouTube API Services.'),
+    ('uploader-privacy', '/tools/media-studio-uploader/privacy/', '', 'Privacy Policy · Media Studio Uploader',
+     'Privacy policy for Media Studio Uploader, a private tool that uses the YouTube API Services.'),
+    ('uploader-terms', '/tools/media-studio-uploader/terms/', '', 'Terms of Service · Media Studio Uploader',
+     'Terms of service for Media Studio Uploader.'),
     ('404', '/404.html', '', 'Page not found · Manoj Nanjundaswamy', 'This page does not exist.'),
 ]
 NAV = [('work', '/work/', 'Work'), ('studio', '/studio/', 'Studio'), ('projects', '/projects/', 'Projects'),
